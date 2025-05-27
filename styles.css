@@ -248,6 +248,7 @@ body {
 .u-top-bar a,
 .u-top-bar button {
   color: var(--color-white);
+  text-decoration: none;
   background: transparent;
   border: none;
   font-size: var(--font-size-small);
@@ -316,7 +317,8 @@ body {
   align-items: center;
   background-color: var(--u-color-white);
   border-radius: 999px;
-  height: 40px;
+  width: 793px;
+  height: 45px;
   width: 100%;
   overflow: hidden;
   padding-left: 0.75rem;
@@ -1008,9 +1010,14 @@ img {
   height: 110px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
-
-.u-product-card__image,
 .u-category__icon img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.u-product-card__image {
   aspect-ratio: 1 / 1;
   width: 100%;
   height: auto;

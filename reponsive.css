@@ -91,7 +91,7 @@
 /* ===== Responsive Design: Tablet (768px - 1024px) ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
   .u-search-bar-wrapper {
-    max-width: 400px;
+    max-width: 340px;
     margin: 0 1rem;
   }
   .u-icon-label-top , .u-icon-label-bottom{
@@ -538,6 +538,9 @@
 
   .u-service-highlights__item::after {
     display: none;
+  }
+  .deal-card__black-text {
+    
   }
 }
 

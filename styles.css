@@ -7,6 +7,7 @@
   --font-size-cate: 14px;
   --font-size-smaller: 12px;
   --font-size-title-md: 2rem;
+  --font-size-price:18px;
   --font-size-desc-sm: 0.875rem;
   --line-height-base: 1.5;
   --letter-spacing-base: 0.5px;
@@ -77,7 +78,7 @@
   --transition-hover: transform 0.3s ease;
 
   /* Container */
-  --container-max-width: 1200px;
+  --container-max-width: 1410px;
 
   /* Aspect Ratio (modern browsers) */
   --image-ratio-banner: 16 / 9;
@@ -88,7 +89,17 @@
   --z-index-modal: 2000;
   --z-index-Language: 3000;
 }
-
+.container,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  max-width: var(--container-max-width);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
@@ -308,7 +319,7 @@ body {
 
 /* ===== Component: Search Bar ===== */
 .u-search-bar-wrapper {
-  max-width: 640px;
+  max-width: 793px;
   width: 100%;
 }
 
@@ -427,13 +438,13 @@ nav.u-navbar.u-fade-in {
 
 .u-main-nav {
   background-color: var(--color-white);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-cate);
   z-index: var(--z-index-modal);
   position: relative;
 }
 
 .u-main-nav .nav-link {
-  font-size: 18px;
+  font-size: var(--font-size-cate);
   color: var(--color-black);
   font-weight: 500;
   padding: 6px 10px;
@@ -446,7 +457,7 @@ nav.u-navbar.u-fade-in {
 }
 
 .u-main-nav__right {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-cate);
   color: #222;
   white-space: nowrap;
   display: flex;
@@ -463,7 +474,7 @@ nav.u-navbar.u-fade-in {
 }
 
 .u-main-nav .dropdown-menu {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-cate);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: none;
 }
@@ -535,7 +546,7 @@ nav.u-navbar.u-fade-in {
 }
 
 .u-main-nav .dropdown-menu {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-cate);
   border-radius: var(--radius-sm);
 }
 
@@ -997,6 +1008,14 @@ img {
 
 
 /* -- Categories Section -- */
+.swiper-wrapper{
+  width: 1410px;
+  height: 172px;
+}
+.u-category__count{
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+}
 
 .u-category__item {
   min-height: 110px;
@@ -1036,10 +1055,16 @@ img {
 
 .u-category__title {
   font-size: var(--font-size-cate);
+  font-weight: var(--font-weight-medium);
   transition: color 0.5s ease;
 }
 
 /* Trending Products Section */
+.sale{
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 2px;
+}
 
 .u-top-trending__titel {
   font-size: var(--font-size-title-md);
@@ -1061,6 +1086,8 @@ img {
 }
 
 .u-product-card {
+  width: 210px !important;
+  height: 337px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1076,7 +1103,7 @@ img {
 }
 
 .u-product-card__name {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-cate);
   color: var(--u-color-text);
   font-weight: var(--font-weight-mediuml);
   margin: 0;
@@ -1126,9 +1153,10 @@ img {
 }
 
 .u-product-card__price {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-price);
+  font-weight: var(--font-weight-medium);
   color: var(--color-black);
+  margin-bottom: 16px !important;
 }
 
 .u-product-card__price--old {
@@ -1138,6 +1166,7 @@ img {
 }
 
 /* Section: promotional-banners - includes cellphone and headphone promo cards  */
+
 
 .promo-banners__title {
   font-size: var(--fs-title);
@@ -1171,6 +1200,22 @@ img {
 }
 
 /* Top Selling Products Section */
+.selling_item{
+  height: 704px !important;
+
+}
+.Selling {
+  height: 704px !important;
+}
+
+.text-muted{
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-weight-medium);
+}
+.card-title{
+  font-size: var(--font-size-cate);
+  font-weight: var(--font-weight-medium);
+}
 
 .product-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease-in;
@@ -1307,9 +1352,6 @@ img {
   padding-left: 0;
 }
 
-.row>* {
-  padding-left: 0px !important;
-}
 
 /* recommended */
 .u-recommended__view-all {
@@ -1333,7 +1375,6 @@ img {
 }
 
 .deals-promotions__title {
-  font-family: var(--font-family-base);
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
@@ -1689,7 +1730,7 @@ img {
 .footer__icon-circle:hover:nth-child(1) {
   background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
   fill: var(--color-white);
-  /* Nếu icon là SVG inline */
+  
   transition: background 0.3s ease, color 0.3s ease, fill 0.3s ease;
 }
 
@@ -1770,18 +1811,18 @@ img {
   gap: var(--space-xs);
 }
 
-/* === CLS FIX bổ sung === */
+/* === CLS FIX === */
 
-/* Tránh layout shift tại phần Recently Viewed Products */
+/* layout shift - Recently Viewed Products */
 .u-main-nav__right {
   min-height: 32px;
   white-space: nowrap;
 }
 
 
-/* === CLS FIX toàn diện === */
+/* === CLS FIX === */
 
-/* 1. Giữ layout ổn định cho navbar đang bị shift */
+/* 1 fix layout navbar shift */
 nav.u-navbar.u-fade-in,
 nav.u-navbar.u-fade-in.active {
   min-height: 64px;
@@ -1789,7 +1830,7 @@ nav.u-navbar.u-fade-in.active {
   transition: none !important;
 }
 
-/* 2. Giữ chỗ cho phần "Recently Viewed Products" */
+/* 2. "Recently Viewed Products" */
 .u-main-nav__recent-text {
   display: inline-block;
   min-width: 240px;

@@ -127,7 +127,7 @@
 /* ===== Responsive Design: Desktop (>1200px) ===== */
 @media (min-width: 1200px) {
   .u-search-bar-wrapper {
-    max-width: 600px;
+    max-width: 793px;
   }
 
   .u-icon-img {
@@ -419,6 +419,8 @@
 }
 
 /* === Recommended Section Slider Responsive === */
+
+
 .u-recommended__carousel-wrapper {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -587,7 +589,7 @@
   }
 }
 
-/* Tablet và mobile*/
+/* Tablet  mobile*/
 @media (max-width: 1024px) {
   .u-service-highlights__item:not(:last-child)::after {
     display: none;
@@ -649,3 +651,36 @@
    @media (max-width: 991px){
     
    }
+
+
+   @media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .u-recommended-for-u {
+    margin-top: 640px !important;
+    padding-top: 20px;
+    clear: both;
+    position: relative;
+    z-index: 1;
+  }
+
+  .u-recommended__slider-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}
+

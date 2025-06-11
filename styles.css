@@ -99,6 +99,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
 }
 /* Smooth Scrolling */
 html {
@@ -1937,7 +1938,10 @@ body {
   }
 }
 
-.my-category-swiper .swiper-slide {
-  text-align: center;
-  width: auto;
+.js-footer-column .footer__list {
+  display: none;
+}
+
+.js-footer-column.active .footer__list {
+  display: block;
 }

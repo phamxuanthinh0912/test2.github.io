@@ -140,3 +140,10 @@ new Swiper('.my-category-swiper', {
   },
 });
 
+// footer 
+document.querySelectorAll('.js-footer-toggle').forEach((toggle) => {
+    toggle.addEventListener('click', function () {
+      const column = this.closest('.js-footer-column');
+      column.classList.toggle('active');
+    });
+  });

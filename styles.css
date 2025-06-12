@@ -99,7 +99,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
+  
 }
 /* Smooth Scrolling */
 html {
@@ -1168,7 +1168,6 @@ img {
 
 /* Section: promotional-banners - includes cellphone and headphone promo cards  */
 
-
 .promo-banners__title {
   font-size: var(--fs-title);
   line-height: 1.3;
@@ -1194,20 +1193,28 @@ img {
   text-decoration: none;
   opacity: 1;
 }
-
+.promo-banners__item {
+  width: 100%; 
+  max-width: 690px; 
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .promo-banners__image-wrapper {
   flex-shrink: 0;
+  width: 220px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
+.promo-banners__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 /* Top Selling Products Section */
-.selling_item{
-  height: 704px !important;
-
-}
-.Selling {
-  height: 704px !important;
-}
 
 .text-muted{
   font-size: var(--font-size-smaller);
@@ -1892,7 +1899,7 @@ body {
 .content {
   opacity: 0;
   visibility: hidden;
-  min-height: 100vh;
+  min-height: 100vh;x`
 }
 
 .content.active {
@@ -1938,10 +1945,8 @@ body {
   }
 }
 
-.js-footer-column .footer__list {
-  display: none;
-}
-
-.js-footer-column.active .footer__list {
-  display: block;
+.u-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
 }

@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       e.preventDefault();
 
-      // Ẩn nội dung cũ
+      
       if (content) content.classList.remove('active');
 
-      // Hiện loader
+     
       if (loader) loader.classList.add('active');
 
-      // Chuyển trang sau delay
+      
       setTimeout(() => {
         window.location.href = href;
       }, 500); 
@@ -139,11 +139,3 @@ new Swiper('.my-category-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-// footer 
-document.querySelectorAll('.js-footer-toggle').forEach((toggle) => {
-    toggle.addEventListener('click', function () {
-      const column = this.closest('.js-footer-column');
-      column.classList.toggle('active');
-    });
-  });

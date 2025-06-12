@@ -512,7 +512,6 @@
   }
 }
 
-
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
   .u-product-card {
@@ -606,7 +605,9 @@
     padding: 20px;
     text-align: center;
   }
-
+  .footer__locale {
+    display: none !important;
+  }
   .footer__support-heading {
     margin-bottom: 20px;
   }
@@ -643,15 +644,27 @@
   }
 }
 
+
   @media (min-width:1200px){
     .footer__locale{
-
       display: flex !important;
     }
   }
   
    @media (max-width: 991px){
-    
+    .footer__top {
+      display: none !important;
+      padding: 20px;
+      text-align: center;
+  }
+  .sign__up{
+    text-align: center;
+    justify-items: center;
+  }
+
+    .footer__locale {
+      display: none !important;
+    }
    }
 
 
@@ -664,6 +677,9 @@
 }
 
 @media (min-width: 1200px) {
+  .footer__locale {
+    display: none;
+  }
   .container {
     max-width: var(--container-max-width);
     margin-left: auto;
@@ -671,28 +687,13 @@
   }
 }
 
-@media (max-width: 575px) {
-  .footer__form {
-    display: block;
-  }
-
-  .footer__input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .footer__btn {
-    width: 100%;
+@media (max-width: 767px) {
+  section,
+  .section,
+  .container,
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
-@media (min-width: 768px) {
-  .js-footer-column .footer__list {
-    display: block !important;
-  }
-
-  .js-footer-toggle span {
-    display: none; 
-  }
-}
-
 
